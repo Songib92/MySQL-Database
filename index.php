@@ -15,28 +15,29 @@
 	<div class="wrap">
 		<a class="btn btn-sm btn-primary" href="table.php">All Data</a>
 		<div class="card shadow">
-			<div class="card-body">
+			<div class="card-body">				
 				<h2>Sign Up</h2>
-				<form action="">
+
+				<form action="" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="">Name</label>
-						<input class="form-control" type="text">
+						<input name="name" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Email</label>
-						<input class="form-control" type="text">
+						<input name="email"class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Cell</label>
-						<input class="form-control" type="text">
+						<input name="cell" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Username</label>
-						<input class="form-control" type="text">
+						<input name="uname" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Location</label>
-						<select class="form-control" name="" id="">
+						<select name="location" class="form-control"  id="">
 							<option value="">--Select--</option>
 							<option value="">Gazipur</option>
 							<option value="">Mirpur</option>
@@ -51,7 +52,7 @@
 					</div>
 					<div class="form-group">
 						<label for="">Age</label>
-						<input class="form-control" type="text">
+						<input name="age" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Gender</label>
@@ -61,13 +62,13 @@
 					</div>
 					<div class="form-group">
 						<label for="">Photo</label>
-						<input class="form-control" type="File">
+						<input name="photo" class="form-control" type="File">
 					</div>
 					<div class="form-group">
-						<input type="Checkbox" id="Status"> <label for="Status">Published</label>
+						<input type="Checkbox" checked id="Status"> <label for="Status">Published</label>
 					</div>
 					<div class="form-group">
-						<input class="btn btn-primary" type="submit" value="Add Your Information">
+						<input name="submit" class="btn btn-primary" type="submit" value="Add Your Information">
 					</div>
 				</form>
 			</div>
