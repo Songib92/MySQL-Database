@@ -10,7 +10,35 @@
 </head>
 <body>
 	
-	
+	<?php 
+	/**
+	 * Data Form Setup
+	 */
+
+	if ( isset ($_POST ['submit']) ) {
+		
+		//Valu Get
+
+		$name 		= $_POST ['name'];
+		$email 		= $_POST ['email'];
+		$cell 		= $_POST ['cell'];
+		$uname 		= $_POST ['uname'];
+		$location 	= $_POST ['location'];
+		$age 		= $_POST ['age'];
+		$gender 	= $_POST ['gender'];
+		$status 	= $_POST ['status'];
+
+
+		//File Upload
+
+		$image	 	= $_FILES['photo'];
+	}
+
+
+	 ?>
+
+
+
 
 	<div class="wrap">
 		<a class="btn btn-sm btn-primary" href="table.php">All Data</a>
@@ -39,14 +67,14 @@
 						<label for="">Location</label>
 						<select name="location" class="form-control"  id="">
 							<option value="">--Select--</option>
-							<option value="">Gazipur</option>
-							<option value="">Mirpur</option>
-							<option value="">Gulshan</option>
-							<option value="">Badda</option>
-							<option value="">Rampura</option>
-							<option value="">Banani</option>
-							<option value="">Mohakhali</option>
-							<option value="">Others</option>
+							<option value="Gazipur">Gazipur</option>
+							<option value="Mirpur">Mirpur</option>
+							<option value="Gulshan">Gulshan</option>
+							<option value="Badda">Badda</option>
+							<option value="Rampura">Rampura</option>
+							<option value="Banani">Banani</option>
+							<option value="Mohakhali">Mohakhali</option>
+							<option value="Others">Others</option>
 						</select>
 						
 					</div>
@@ -65,7 +93,7 @@
 						<input name="photo" class="form-control" type="File">
 					</div>
 					<div class="form-group">
-						<input type="Checkbox" checked id="Status"> <label for="Status">Published</label>
+						<input name="status" type="Checkbox" checked value="published" id="Status"> <label for="Status">Published</label>
 					</div>
 					<div class="form-group">
 						<input name="submit" class="btn btn-primary" type="submit" value="Add Your Information">
